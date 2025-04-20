@@ -1004,7 +1004,6 @@ export namespace Prisma {
     id: string | null
     name: string | null
     email: string | null
-    password: string | null
     isSubscribe: boolean | null
     ssubscriptionEnds: Date | null
     createdAt: Date | null
@@ -1015,7 +1014,6 @@ export namespace Prisma {
     id: string | null
     name: string | null
     email: string | null
-    password: string | null
     isSubscribe: boolean | null
     ssubscriptionEnds: Date | null
     createdAt: Date | null
@@ -1026,7 +1024,6 @@ export namespace Prisma {
     id: number
     name: number
     email: number
-    password: number
     isSubscribe: number
     ssubscriptionEnds: number
     createdAt: number
@@ -1039,7 +1036,6 @@ export namespace Prisma {
     id?: true
     name?: true
     email?: true
-    password?: true
     isSubscribe?: true
     ssubscriptionEnds?: true
     createdAt?: true
@@ -1050,7 +1046,6 @@ export namespace Prisma {
     id?: true
     name?: true
     email?: true
-    password?: true
     isSubscribe?: true
     ssubscriptionEnds?: true
     createdAt?: true
@@ -1061,7 +1056,6 @@ export namespace Prisma {
     id?: true
     name?: true
     email?: true
-    password?: true
     isSubscribe?: true
     ssubscriptionEnds?: true
     createdAt?: true
@@ -1145,7 +1139,6 @@ export namespace Prisma {
     id: string
     name: string | null
     email: string | null
-    password: string | null
     isSubscribe: boolean
     ssubscriptionEnds: Date | null
     createdAt: Date
@@ -1173,7 +1166,6 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     email?: boolean
-    password?: boolean
     isSubscribe?: boolean
     ssubscriptionEnds?: boolean
     createdAt?: boolean
@@ -1186,7 +1178,6 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     email?: boolean
-    password?: boolean
     isSubscribe?: boolean
     ssubscriptionEnds?: boolean
     createdAt?: boolean
@@ -1197,7 +1188,6 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     email?: boolean
-    password?: boolean
     isSubscribe?: boolean
     ssubscriptionEnds?: boolean
     createdAt?: boolean
@@ -1208,14 +1198,13 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     email?: boolean
-    password?: boolean
     isSubscribe?: boolean
     ssubscriptionEnds?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "email" | "password" | "isSubscribe" | "ssubscriptionEnds" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "email" | "isSubscribe" | "ssubscriptionEnds" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     todos?: boolean | User$todosArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
@@ -1232,7 +1221,6 @@ export namespace Prisma {
       id: string
       name: string | null
       email: string | null
-      password: string | null
       isSubscribe: boolean
       ssubscriptionEnds: Date | null
       createdAt: Date
@@ -1664,7 +1652,6 @@ export namespace Prisma {
     readonly id: FieldRef<"User", 'String'>
     readonly name: FieldRef<"User", 'String'>
     readonly email: FieldRef<"User", 'String'>
-    readonly password: FieldRef<"User", 'String'>
     readonly isSubscribe: FieldRef<"User", 'Boolean'>
     readonly ssubscriptionEnds: FieldRef<"User", 'DateTime'>
     readonly createdAt: FieldRef<"User", 'DateTime'>
@@ -3188,7 +3175,6 @@ export namespace Prisma {
     id: 'id',
     name: 'name',
     email: 'email',
-    password: 'password',
     isSubscribe: 'isSubscribe',
     ssubscriptionEnds: 'ssubscriptionEnds',
     createdAt: 'createdAt',
@@ -3298,7 +3284,6 @@ export namespace Prisma {
     id?: StringFilter<"User"> | string
     name?: StringNullableFilter<"User"> | string | null
     email?: StringNullableFilter<"User"> | string | null
-    password?: StringNullableFilter<"User"> | string | null
     isSubscribe?: BoolFilter<"User"> | boolean
     ssubscriptionEnds?: DateTimeNullableFilter<"User"> | Date | string | null
     createdAt?: DateTimeFilter<"User"> | Date | string
@@ -3310,7 +3295,6 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrderInput | SortOrder
     email?: SortOrderInput | SortOrder
-    password?: SortOrderInput | SortOrder
     isSubscribe?: SortOrder
     ssubscriptionEnds?: SortOrderInput | SortOrder
     createdAt?: SortOrder
@@ -3325,7 +3309,6 @@ export namespace Prisma {
     OR?: UserWhereInput[]
     NOT?: UserWhereInput | UserWhereInput[]
     name?: StringNullableFilter<"User"> | string | null
-    password?: StringNullableFilter<"User"> | string | null
     isSubscribe?: BoolFilter<"User"> | boolean
     ssubscriptionEnds?: DateTimeNullableFilter<"User"> | Date | string | null
     createdAt?: DateTimeFilter<"User"> | Date | string
@@ -3337,7 +3320,6 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrderInput | SortOrder
     email?: SortOrderInput | SortOrder
-    password?: SortOrderInput | SortOrder
     isSubscribe?: SortOrder
     ssubscriptionEnds?: SortOrderInput | SortOrder
     createdAt?: SortOrder
@@ -3354,7 +3336,6 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"User"> | string
     name?: StringNullableWithAggregatesFilter<"User"> | string | null
     email?: StringNullableWithAggregatesFilter<"User"> | string | null
-    password?: StringNullableWithAggregatesFilter<"User"> | string | null
     isSubscribe?: BoolWithAggregatesFilter<"User"> | boolean
     ssubscriptionEnds?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
     createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
@@ -3425,7 +3406,6 @@ export namespace Prisma {
     id: string
     name?: string | null
     email?: string | null
-    password?: string | null
     isSubscribe?: boolean
     ssubscriptionEnds?: Date | string | null
     createdAt?: Date | string
@@ -3437,7 +3417,6 @@ export namespace Prisma {
     id: string
     name?: string | null
     email?: string | null
-    password?: string | null
     isSubscribe?: boolean
     ssubscriptionEnds?: Date | string | null
     createdAt?: Date | string
@@ -3449,7 +3428,6 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     email?: NullableStringFieldUpdateOperationsInput | string | null
-    password?: NullableStringFieldUpdateOperationsInput | string | null
     isSubscribe?: BoolFieldUpdateOperationsInput | boolean
     ssubscriptionEnds?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -3461,7 +3439,6 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     email?: NullableStringFieldUpdateOperationsInput | string | null
-    password?: NullableStringFieldUpdateOperationsInput | string | null
     isSubscribe?: BoolFieldUpdateOperationsInput | boolean
     ssubscriptionEnds?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -3473,7 +3450,6 @@ export namespace Prisma {
     id: string
     name?: string | null
     email?: string | null
-    password?: string | null
     isSubscribe?: boolean
     ssubscriptionEnds?: Date | string | null
     createdAt?: Date | string
@@ -3484,7 +3460,6 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     email?: NullableStringFieldUpdateOperationsInput | string | null
-    password?: NullableStringFieldUpdateOperationsInput | string | null
     isSubscribe?: BoolFieldUpdateOperationsInput | boolean
     ssubscriptionEnds?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -3495,7 +3470,6 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     email?: NullableStringFieldUpdateOperationsInput | string | null
-    password?: NullableStringFieldUpdateOperationsInput | string | null
     isSubscribe?: BoolFieldUpdateOperationsInput | boolean
     ssubscriptionEnds?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -3640,7 +3614,6 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     email?: SortOrder
-    password?: SortOrder
     isSubscribe?: SortOrder
     ssubscriptionEnds?: SortOrder
     createdAt?: SortOrder
@@ -3651,7 +3624,6 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     email?: SortOrder
-    password?: SortOrder
     isSubscribe?: SortOrder
     ssubscriptionEnds?: SortOrder
     createdAt?: SortOrder
@@ -3662,7 +3634,6 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     email?: SortOrder
-    password?: SortOrder
     isSubscribe?: SortOrder
     ssubscriptionEnds?: SortOrder
     createdAt?: SortOrder
@@ -4054,7 +4025,6 @@ export namespace Prisma {
     id: string
     name?: string | null
     email?: string | null
-    password?: string | null
     isSubscribe?: boolean
     ssubscriptionEnds?: Date | string | null
     createdAt?: Date | string
@@ -4065,7 +4035,6 @@ export namespace Prisma {
     id: string
     name?: string | null
     email?: string | null
-    password?: string | null
     isSubscribe?: boolean
     ssubscriptionEnds?: Date | string | null
     createdAt?: Date | string
@@ -4092,7 +4061,6 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     email?: NullableStringFieldUpdateOperationsInput | string | null
-    password?: NullableStringFieldUpdateOperationsInput | string | null
     isSubscribe?: BoolFieldUpdateOperationsInput | boolean
     ssubscriptionEnds?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -4103,7 +4071,6 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     email?: NullableStringFieldUpdateOperationsInput | string | null
-    password?: NullableStringFieldUpdateOperationsInput | string | null
     isSubscribe?: BoolFieldUpdateOperationsInput | boolean
     ssubscriptionEnds?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
