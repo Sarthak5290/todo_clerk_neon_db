@@ -10,9 +10,10 @@ import type { NextRequest } from "next/server";
 // 1) Define truly public routes
 const isPublicRoute = createRouteMatcher([
   "/",
-  "/api/webhook/register",
+  "/api/webhooks/register",
   "/auth/signup",
   "/auth/signin",
+  "/api/seed",
 ]);
 
 export default clerkMiddleware(async (auth, req: NextRequest) => {

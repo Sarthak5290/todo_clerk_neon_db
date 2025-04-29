@@ -86,7 +86,6 @@ const SignUp = () => {
         setError("Verification failed. Please try again.");
       }
       if (completeSignup.status === "complete") {
-        console.log("Signup complete", completeSignup);
         await setActive({ session: completeSignup.createdSessionId });
         router.push("/dashboard");
       }
